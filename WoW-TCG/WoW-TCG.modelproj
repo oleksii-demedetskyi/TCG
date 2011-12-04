@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{a72d40ce-090d-4acb-8013-3cc6f70ac12c}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>WoW-TCG</Name>
+    <RootNamespace>WoW-TCG</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="Card.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Card.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Card.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Deck.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Deck.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Deck.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Game.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Game.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Game.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1311.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1311.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1444.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Types.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Types.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Types.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Package1_1231.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1228.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1229.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1231.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1253.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\WoW-TCG.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

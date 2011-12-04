@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d6be9c07-d2ae-4a90-beae-ac86f312a37d"
+  name="Collector info" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="a91d0e98-ee62-4d64-972d-12a18294d1a6"
+        name="Set"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="f1a59a39-a259-4588-a23a-b314ebcd259c"
+        name="Rarity"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="3462e185-7cc3-4fac-a792-ca62bf7a122d"
+            name="Common">
+            <description>White</description>
+            <specification>
+              <literalInteger
+                Id="b3ad0763-8a57-45e3-a4c7-129240a7ea10"
+                name="Integer"
+                value="0" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="3a52c799-436a-402e-8a11-89caa8ed4813"
+            name="Uncommon">
+            <description>Green</description>
+            <specification>
+              <literalInteger
+                Id="c83bf8d6-9e8a-4838-8a3d-890f27b4c1f1"
+                name="Integer"
+                value="1" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="5c899002-a448-4fac-9873-8c7a50c2b4ca"
+            name="Rare">
+            <description>Blue</description>
+            <specification>
+              <literalInteger
+                Id="052ffe8e-7242-4121-83a9-aee6e77dbb57"
+                name="Integer"
+                value="2" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="4cfd4c3e-e792-4c7f-8444-7a2d368a66ac"
+            name="Unique">
+            <description>Purple</description>
+            <specification>
+              <literalInteger
+                Id="9f11d9e0-4938-40fa-a98d-178ddc789a52"
+                name="Integer"
+                value="3" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ae4a670a-6db0-4691-9ee3-1d057bae4257"
+            name="Legendary">
+            <description>Orange</description>
+            <specification>
+              <literalInteger
+                Id="d7012851-c027-45e0-a0de-5d13876401c7"
+                name="Integer"
+                value="4" />
+            </specification>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4bba25b4-c3c1-4901-a0ce-0f468a64d1ee"
+        name="CollectorInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="536b18ff-b5b3-4eee-9a15-cf6a4df9f3e3"
+            name="Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="WoW-TCG.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="91a20897-2b27-4b8e-ab23-2d03a853449f"
+            name="Rarity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="f1a59a39-a259-4588-a23a-b314ebcd259c"
+                LastKnownName="Rarity"
+                LastKnownLocation="Package_1229.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b704a7bf-917e-40ed-9e95-20aeb73acfad"
+            name="Set"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="a91d0e98-ee62-4d64-972d-12a18294d1a6"
+                LastKnownName="Set"
+                LastKnownLocation="Package_1229.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

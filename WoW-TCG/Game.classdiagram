@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3fbda4c6-cb3c-4fa6-9636-6e2f535884a5" name="Game" linkedPackageId="3df7214f-f313-40d7-88cd-d9dae706712d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e5cc29ac-6737-4c55-9f61-27d5a5f8e288">
+      <profileInstance Id="80b4dd0a-48e5-400c-95ff-080212c72a52" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="119b1e33-ff0a-4a5b-adb5-b1ff21ac88b7">
+      <profileInstance Id="4b8313d5-b6a1-4ab6-bd77-d3a74a634233" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="757320dc-973a-4f05-b129-ee7c135c2fbf" name="Game">
+        <elementDefinition Id="81750067-0ac9-4085-af9f-f704922449cc" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="3f218731-afba-4229-944a-71ce8c75a613" name="Chain" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a2866fcc-f2b7-4886-9cf7-624a2f0c4cc1" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6eceecce-3e52-4004-af59-21a2bb60a797" name="Link" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="61f27f64-f4c2-4ed7-b641-a88640e44b3a" />
+              <suppliersInternal>
+                <interfaceRealization Id="84e77ab1-02fd-4cda-9e81-a2fce1eb8fec">
+                  <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+                  <elementDefinition Id="3bbeb4a1-0782-4692-9567-0d82d7782b57" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9de37780-0e24-4ffe-beb8-a49ec5ea0a39" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="afc93918-3685-4295-b972-06faef42278f" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="7978ae03-2517-44b5-8c98-69f550811d65" name="Controllable" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="2ac0c0e4-245b-4392-9876-cb7d42173bcf" />
+              <ownedAttributes>
+                <property Id="3f54794f-9d68-411a-bb33-d68a5f473897" name="Controller" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="82a54652-e456-42c6-b230-3265acdba36c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a14221d-62dd-4838-a4aa-9405fa2047a5" LastKnownName="Player" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributes>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f3d51b54-7ae6-489d-ae36-d235e79aa692" name="TriggeredEffect" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5d18c2f0-8686-4457-b6e0-ef6050050058" />
+              <suppliersInternal>
+                <interfaceRealization Id="5b4bedd2-9d51-493d-837a-e0b3694ede2a">
+                  <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+                  <elementDefinition Id="9bcec68a-aa77-47db-9bc7-cec4076324d2" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="d15b2258-a2f5-4c3a-8cf3-d373930982ef" name="Source" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d7397658-1b2e-41c8-b39f-57f973c70fcf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f6def98e-fb89-45e1-ad3e-8a4a9ea42098" LastKnownName="EffectSource" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="23c876e9-6794-4163-a840-91d9a224f0db" name="EffectSource" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b55cb150-d0b3-4fde-900c-c8a88b5d4b36" />
+              <suppliersInternal>
+                <interfaceRealization Id="e0acfb0f-2a02-43e4-832c-8ba44c01648e">
+                  <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+                  <elementDefinition Id="371e83eb-476a-48ab-873c-f4c9ec350cc7" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="4e9a2b7f-e5ee-41b4-9671-da00d4ad7a7a" name="Packet" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fcd1447c-1944-447e-adfb-69fc50b1daed" />
+              <suppliersInternal>
+                <interfaceRealization Id="9c7f4c39-af3b-46d3-9404-2045af90254c">
+                  <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+                  <elementDefinition Id="980cbda0-c61b-481c-9e10-f3b4f9ac8cfb" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="4fc26536-c004-4f8d-a001-2877ef2f07c0" name="Modifier" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b57422d4-b80d-4a75-a826-e409ff943f2c" />
+              <suppliersInternal>
+                <interfaceRealization Id="7dda4b91-5bac-4862-be2d-01408630d958">
+                  <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+                  <elementDefinition Id="1406d79f-af06-4413-86cb-e5e23caec390" />
+                </interfaceRealization>
+              </suppliersInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="4a14221d-62dd-4838-a4aa-9405fa2047a5" name="Player" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Game::Player">
+        <elementDefinition Id="afc93918-3685-4295-b972-06faef42278f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f6def98e-fb89-45e1-ad3e-8a4a9ea42098" name="EffectSource" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Game::EffectSource">
+        <elementDefinition Id="b55cb150-d0b3-4fde-900c-c8a88b5d4b36" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c8bf848d-7411-48ae-be13-574469e1d91c" name="Card" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b1eef760-ad1b-4bfb-9f3d-a474557d925f" />
+        <suppliersInternal>
+          <interfaceRealization Id="0484a1c7-dedf-4ab4-9559-722873c84a09">
+            <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+            <elementDefinition Id="e8cfad4f-0c03-4ec3-96bd-2b03e524c5b5" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="3c30e7d1-08ba-4540-852e-ed4d4131b478" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="03e1b786-8493-46eb-894d-75881263a084" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="44a96d35-2dd8-4484-b116-aa6839a6951f" LastKnownName="CardDescription" />
+            </type_NamedElement>
+          </property>
+          <property Id="2ddd9807-0c76-47d1-8a80-3910869a07de" name="Owner" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d13b687e-ca4c-4786-98cb-2b14d9d2ac0c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="27f1aed9-470b-47fc-8ec9-19e4fe86cd7a" LastKnownName="Player" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="44a96d35-2dd8-4484-b116-aa6839a6951f" name="CardDescription" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::CardDescription">
+        <elementDefinition Id="25cd6a9c-e615-4b1e-9f2c-41fdca32a4da" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="27f1aed9-470b-47fc-8ec9-19e4fe86cd7a" name="Player" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Game::Player">
+        <elementDefinition Id="afc93918-3685-4295-b972-06faef42278f" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="3df7214f-f313-40d7-88cd-d9dae706712d" name="WoW-TCG">
+    <elementDefinition Id="2c3903db-8a17-4d89-9896-4cd42292b4ca" />
+  </package>
+</logicalClassDesignerModel>

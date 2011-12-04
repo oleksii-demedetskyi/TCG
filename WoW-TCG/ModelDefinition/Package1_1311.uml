@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="dbc12d4d-8332-4804-a015-55462780f000"
+  name="Deck" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="da457563-042e-4e8c-9e53-a0da5c7328e5"
+        name="LimitedDeck"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="812e66be-285c-4c96-83af-6dffeb5b6cf6"
+            name="Cards"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="c9cb0f10-bd0b-4aa7-8a77-f1583c26dd12"
+                name="Lower"
+                value="30" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="e6b24f6e-5821-4fae-8c3c-f7b801bc7848"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b1eef760-ad1b-4bfb-9f3d-a474557d925f"
+                LastKnownName="Card"
+                LastKnownLocation="Package_1228.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ed90e523-4fca-4992-abeb-c86c95737630"
+        name="ConstrquctedDeck"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="08b81241-fb7c-4181-beae-2bc4c2feaee0"
+            name="Cards"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="07826bad-287e-402d-832c-088fea8481d2"
+                name="Lower"
+                value="60" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="df1d8c4c-a292-4d5a-bf4a-363f46eaf5ee"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b1eef760-ad1b-4bfb-9f3d-a474557d925f"
+                LastKnownName="Card"
+                LastKnownLocation="Package_1228.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

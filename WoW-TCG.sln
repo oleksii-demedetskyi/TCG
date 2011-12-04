@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "WoW-TCG", "WoW-TCG\WoW-TCG.modelproj", "{A72D40CE-090D-4ACB-8013-3CC6F70AC12C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72D40CE-090D-4ACB-8013-3CC6F70AC12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72D40CE-090D-4ACB-8013-3CC6F70AC12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72D40CE-090D-4ACB-8013-3CC6F70AC12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72D40CE-090D-4ACB-8013-3CC6F70AC12C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

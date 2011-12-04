@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.75, 9.25" name="Game">
+  <logicalClassDesignerModelMoniker Id="3fbda4c6-cb3c-4fa6-9636-6e2f535884a5" />
+  <nestedChildShapes>
+    <classShape Id="04ebd6c8-734e-4458-a3b9-f1b01e28f4e0" absoluteBounds="1.75, 2.375, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="c8bf848d-7411-48ae-be13-574469e1d91c" LastKnownName="Card" />
+      <relativeChildShapes>
+        <lollipopShape Id="71a4e275-f129-4992-b328-90e383e05a97" absoluteBounds="1.9, 2.1089965412467717, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+          <relativeChildShapes>
+            <lollipopLabelShape Id="18566913-72da-45ee-9e76-641ca6ec7bfa" absoluteBounds="2.0699999973177921, 2.1089965412467717, 1.0090963840484619, 0.2060034589767456" qualifiedName="WoW-TCG::Game::Controllable" hideQualifiedName="false" />
+          </relativeChildShapes>
+        </lollipopShape>
+      </relativeChildShapes>
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="fccff408-d534-45b0-8d73-3d8d14eb1d35" absoluteBounds="1.7650000000000006, 2.765, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="e39bfe95-b885-484e-8c5b-fba6c36570c3" absoluteBounds="1.765, 3.296484357615312, 1.4700000000000002, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <packageShape Id="49396030-c8d8-4424-baa1-768b6129534d" absoluteBounds="3.625, 1.625, 11.875, 7.375" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="757320dc-973a-4f05-b129-ee7c135c2fbf" LastKnownName="Game" />
+      <nestedChildShapes>
+        <classShape Id="51f04f1d-dc3e-4fc2-b9b7-6d3494b1ecdb" absoluteBounds="6.625, 2.375, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="3f218731-afba-4229-944a-71ce8c75a613" LastKnownName="Chain" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="26f70467-a7f3-407d-9ad2-a84be176f91f" absoluteBounds="6.64, 2.7649999999999997, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="5b7f23cb-1c2c-4032-b987-ad504d9023ac" absoluteBounds="6.64, 2.9761718675494198, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="e07400c3-11c6-4a49-9f02-8ba6c816c710" absoluteBounds="8.5, 4.875, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="6eceecce-3e52-4004-af59-21a2bb60a797" LastKnownName="Link" />
+          <relativeChildShapes>
+            <lollipopShape Id="dd414380-402f-4546-a2f9-5bf8a8e90bef" absoluteBounds="8.65, 4.6089965412467722, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+              <relativeChildShapes>
+                <lollipopLabelShape Id="4d16e2c2-4585-4f20-a6e3-f19f0736c2b4" absoluteBounds="8.8199999973177921, 4.6089965412467722, 0.63534426689147949, 0.2060034589767456" qualifiedName="WoW-TCG::Game::Controllable" hideQualifiedName="false" />
+              </relativeChildShapes>
+            </lollipopShape>
+          </relativeChildShapes>
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="25bfb494-553c-449e-9e93-3718d27faeae" absoluteBounds="8.515, 5.265, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="8c536270-9c14-40ae-8922-3afbd6dbc97e" absoluteBounds="8.515, 5.47617186754942, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="6c35d0ca-88d3-4f92-b247-a7ca4ad04387" absoluteBounds="8.5, 2.375, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="9de37780-0e24-4ffe-beb8-a49ec5ea0a39" LastKnownName="Player" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="2e23a3b9-fbf6-4b63-b99a-9ef872e53144" absoluteBounds="8.515, 2.7649999999999997, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="4a03c2e5-799f-43cb-9199-14b39b7d32c2" absoluteBounds="8.515, 2.9761718675494198, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <interfaceShape Id="abde276c-c133-4c96-879c-16b9999602b8" absoluteBounds="4.625, 2.375, 1.5, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+          <interfaceMoniker Id="7978ae03-2517-44b5-8c98-69f550811d65" LastKnownName="Controllable" />
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="b46cb418-dcfb-46cf-ba2a-c1c98b14d2b5" absoluteBounds="4.64, 2.765, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="d301871c-8435-4507-889b-86c6bbf03712" absoluteBounds="4.64, 3.1363281125823654, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </interfaceShape>
+        <classShape Id="5d6e93ee-d40f-4649-9eea-3d41db29a8b2" absoluteBounds="10.25, 4.875, 1.5, 1.0624999801317845" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="f3d51b54-7ae6-489d-ae36-d235e79aa692" LastKnownName="TriggeredEffect" />
+          <relativeChildShapes>
+            <lollipopShape Id="293cf420-b89e-439b-bb9e-c6ce6c274212" absoluteBounds="10.4, 4.6089965412467722, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+              <relativeChildShapes>
+                <lollipopLabelShape Id="1ba1f71d-0a22-4018-bb07-47c8e3f39752" absoluteBounds="10.569999997317792, 4.6089965412467722, 0.63534426689147949, 0.2060034589767456" qualifiedName="WoW-TCG::Game::Controllable" hideQualifiedName="false" />
+              </relativeChildShapes>
+            </lollipopShape>
+          </relativeChildShapes>
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="1d2232bd-7ef0-4501-b1d1-50f0af8178fc" absoluteBounds="10.265, 5.265, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="851778e6-24b9-4025-bc59-f182b1746be8" absoluteBounds="10.265, 5.6363281125823654, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="64ded248-f48d-48f7-b3c0-bdda92f3b3e1" absoluteBounds="12, 4.875, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="23c876e9-6794-4163-a840-91d9a224f0db" LastKnownName="EffectSource" />
+          <relativeChildShapes>
+            <lollipopShape Id="78d3216b-463c-4e96-9f98-2f29c319553a" absoluteBounds="12.15, 4.6089965412467722, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+              <relativeChildShapes>
+                <lollipopLabelShape Id="b0c59093-42e3-4b16-a0cb-d3a31636858d" absoluteBounds="12.319999997317792, 4.6089965412467722, 0.63534426689147949, 0.2060034589767456" qualifiedName="WoW-TCG::Game::Controllable" hideQualifiedName="false" />
+              </relativeChildShapes>
+            </lollipopShape>
+          </relativeChildShapes>
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="5cb42993-373b-4bb6-84b8-4bbcc798ba88" absoluteBounds="12.015, 5.2650000000000006, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="b49e947c-654d-4bb4-896b-c76baa6cd9b4" absoluteBounds="12.015, 5.47617186754942, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="1eb0f8c7-7618-4b89-b549-e145a6373d72" absoluteBounds="6.75, 4.875, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="4e9a2b7f-e5ee-41b4-9671-da00d4ad7a7a" LastKnownName="Packet" />
+          <relativeChildShapes>
+            <lollipopShape Id="97d75dd8-f076-4bc9-aac9-1c5ebe9a7223" absoluteBounds="6.9, 4.6089965412467722, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+              <relativeChildShapes>
+                <lollipopLabelShape Id="199ce5ea-4f01-41ed-8513-fdc7a452d311" absoluteBounds="7.0699999973177912, 4.6089965412467722, 0.63534426689147949, 0.2060034589767456" qualifiedName="WoW-TCG::Game::Controllable" hideQualifiedName="false" />
+              </relativeChildShapes>
+            </lollipopShape>
+          </relativeChildShapes>
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="d5c89f6d-18a4-4acf-ba21-58297f1e972b" absoluteBounds="6.765, 5.265, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="0247f03d-736d-4502-9e8f-aba39eb3f67b" absoluteBounds="6.765, 5.47617186754942, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+        <classShape Id="86db7762-d72f-40fe-b7c2-89195a531503" absoluteBounds="5, 4.875, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+          <classMoniker Id="4fc26536-c004-4f8d-a001-2877ef2f07c0" LastKnownName="Modifier" />
+          <relativeChildShapes>
+            <lollipopShape Id="7d42de5d-9de2-47e5-b806-2029492ed455" absoluteBounds="5.15, 4.6089965412467722, 0.125, 0.26600345875322817" collapsed="false" position="Top">
+              <relativeChildShapes>
+                <lollipopLabelShape Id="c52dec43-348d-4360-ab2d-1c7ba718c52f" absoluteBounds="5.3199999973177912, 4.6089965412467722, 0.63534426689147949, 0.2060034589767456" qualifiedName="WoW-TCG::Game::Controllable" hideQualifiedName="false" />
+              </relativeChildShapes>
+            </lollipopShape>
+          </relativeChildShapes>
+          <nestedChildShapes>
+            <AttributeElementListCompartment Id="195b56c1-d71d-4f49-a4a5-31fa6f5c7d3f" absoluteBounds="5.015, 5.265, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+            <OperationElementListCompartment Id="704e9327-8fd7-4bf5-87b9-549a416e71c3" absoluteBounds="5.015, 5.47617186754942, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          </nestedChildShapes>
+        </classShape>
+      </nestedChildShapes>
+    </packageShape>
+    <realizationConnector edgePoints="[(9.25 : 4.875); (9.25 : 4.83548000022352); (8.79951999731779 : 4.83548000022352); (8.79951999731779 : 3.46821998013178); (5.375 : 3.46821998013178); (5.375 : 3.43749998013178)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="84e77ab1-02fd-4cda-9e81-a2fce1eb8fec" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="e07400c3-11c6-4a49-9f02-8ba6c816c710" />
+        <interfaceShapeMoniker Id="abde276c-c133-4c96-879c-16b9999602b8" />
+      </nodes>
+    </realizationConnector>
+    <realizationConnector edgePoints="[(11 : 4.875); (11 : 4.83548000022352); (10.5495199973178 : 4.83548000022352); (10.5495199973178 : 3.46821998013178); (5.375 : 3.46821998013178); (5.375 : 3.43749998013178)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="5b4bedd2-9d51-493d-837a-e0b3694ede2a" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="5d6e93ee-d40f-4649-9eea-3d41db29a8b2" />
+        <interfaceShapeMoniker Id="abde276c-c133-4c96-879c-16b9999602b8" />
+      </nodes>
+    </realizationConnector>
+    <realizationConnector edgePoints="[(12.75 : 4.875); (12.75 : 4.83548000022352); (12.2995199973178 : 4.83548000022352); (12.2995199973178 : 3.46821998013178); (5.375 : 3.46821998013178); (5.375 : 3.43749998013178)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="e0acfb0f-2a02-43e4-832c-8ba44c01648e" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="64ded248-f48d-48f7-b3c0-bdda92f3b3e1" />
+        <interfaceShapeMoniker Id="abde276c-c133-4c96-879c-16b9999602b8" />
+      </nodes>
+    </realizationConnector>
+    <realizationConnector edgePoints="[(7.5 : 4.875); (7.5 : 3.81249998013178); (5.375 : 3.81249998013178); (5.375 : 3.43749998013178)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="9c7f4c39-af3b-46d3-9404-2045af90254c" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="1eb0f8c7-7618-4b89-b549-e145a6373d72" />
+        <interfaceShapeMoniker Id="abde276c-c133-4c96-879c-16b9999602b8" />
+      </nodes>
+    </realizationConnector>
+    <realizationConnector edgePoints="[(5.75 : 4.875); (5.75 : 3.81249998013178); (5.375 : 3.81249998013178); (5.375 : 3.43749998013178)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="7dda4b91-5bac-4862-be2d-01408630d958" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="86db7762-d72f-40fe-b7c2-89195a531503" />
+        <interfaceShapeMoniker Id="abde276c-c133-4c96-879c-16b9999602b8" />
+      </nodes>
+    </realizationConnector>
+    <realizationConnector edgePoints="[(3.25 : 2.90624999006589); (4.625 : 2.90624999006589)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" showAsLollipop="true">
+      <interfaceRealizationMoniker Id="0484a1c7-dedf-4ab4-9559-722873c84a09" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="04ebd6c8-734e-4458-a3b9-f1b01e28f4e0" />
+        <interfaceShapeMoniker Id="abde276c-c133-4c96-879c-16b9999602b8" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

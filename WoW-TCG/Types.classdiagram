@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="eef480cd-1f93-4d59-827c-65d14be53acc" name="Types" linkedPackageId="88f6a43d-bc6f-4f65-92dd-35e93418d69d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5d7931d4-560a-4021-b7b6-5aad52c6e8c1">
+      <profileInstance Id="06039739-1d04-4c14-a88f-9bb781b95564" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ce66c342-eec7-4d11-b7af-768b9a8cd9e7">
+      <profileInstance Id="a83c367e-9051-42fc-b746-96bbb382bcff" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" name="CardType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="37cd0b25-21df-4f2f-b283-383529a6fbd4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4a0f2647-8e39-4727-a45c-be4488d483ae" name="Ability" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aff2591a-7a8a-4cab-910a-8323e342dd57" />
+        <suppliersInternal>
+          <interfaceRealization Id="d8c8bd47-c5e6-476e-b669-d2d331b89195">
+            <interfaceMoniker Id="b7e09aa4-ebed-4c76-8cd4-9553400cd1ed" LastKnownName="Attachment" />
+            <elementDefinition Id="264885b2-c707-4531-897c-db5e367797eb" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="4bc3de78-0ded-4005-a44f-d00eaf1b66f3" isSubstitutable="false">
+            <classMoniker Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" LastKnownName="CardType" />
+            <elementDefinition Id="ab216e17-9a33-40b1-acc0-39b02421a04f" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="69bdd7ae-5c4f-445a-a79b-25db9788764e" name="Attach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cac46514-a52c-400b-b672-1a72bf4f85cc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="042771c6-46e1-431a-a407-c2c326bda128" name="New host" direction="In">
+                  <elementDefinition Id="57dba94d-23c2-4df0-be15-5aa8743ca557" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6d7b921-c784-4342-81b6-78d93640b5bf" LastKnownName="Card" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cc7ee482-3c22-45b4-b144-40e5c05b50a2" name="Reattach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af2b7d99-47a3-49bd-9520-029b5c002075" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="64be1f12-fb9b-4c14-add7-48300b83d759" name="New hosy" direction="In" isUnique="false">
+                  <elementDefinition Id="ca4c48aa-bee5-4ec7-8f3a-ab7ab1b62538" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6d7b921-c784-4342-81b6-78d93640b5bf" LastKnownName="Card" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8a3e82d7-e9f4-44be-8800-0d8a02e8942e" name="Ally" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f435c240-515b-4836-8a0e-7ac720803322" />
+        <suppliersInternal>
+          <interfaceRealization Id="cf4fb48e-cfda-4d68-bffc-1fab27c9497f">
+            <interfaceMoniker Id="05362e0c-3032-4d0a-83b8-17338750554a" LastKnownName="Wielder" />
+            <elementDefinition Id="95c33369-914c-4d4a-9a02-06f1352c4191" />
+          </interfaceRealization>
+          <interfaceRealization Id="ba27027f-ba1e-49b4-899c-a90120d5bff5">
+            <interfaceMoniker Id="f7f48531-b86d-4cda-92fc-036f757c9b97" LastKnownName="Character" />
+            <elementDefinition Id="7e91ea3a-d7eb-4421-9e4a-d3f38ac8f481" />
+          </interfaceRealization>
+          <interfaceRealization Id="b0b9ad4f-34e1-4942-8896-b8c01b9c7a75">
+            <interfaceMoniker Id="9e769975-63f2-4666-973c-28eaca79ad6f" LastKnownName="Attacker" />
+            <elementDefinition Id="77d35e9d-591c-41db-9f33-c166e0abdd0a" />
+          </interfaceRealization>
+          <interfaceRealization Id="68be4cf8-a8ff-4ba9-a0a2-1a3a46cc665d">
+            <interfaceMoniker Id="6590b340-275d-4032-bb19-d0368763e29f" LastKnownName="Defender" />
+            <elementDefinition Id="af0e63de-c909-4b93-87a9-1fd36f2a65a0" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="87945cb5-f5dd-45b8-9194-257f85ecd08a" isSubstitutable="false">
+            <classMoniker Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" LastKnownName="CardType" />
+            <elementDefinition Id="564ca087-877a-4d4f-b451-25e6f77accc6" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="524c5b70-dc55-4844-93c8-ae73b1a23ff0" name="ATK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34ef24d3-408e-4d7c-98fa-8ccfbc3e0072" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4599052e-e493-448a-89a6-0535ee95014c" LastKnownName="ATK" />
+            </type_NamedElement>
+          </property>
+          <property Id="0d6d6110-b419-4f48-a117-cfb78a7c3ea7" name="Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8689e17-3755-4cc5-80d5-424ca91b99f9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8996e86b-e358-4555-8098-5b379e587208" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c65fd044-0a37-472a-8d44-7f69647f729e" name="Hero" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="777af3fe-b3b2-4cb2-876c-89dcb29c0bd9" />
+        <suppliersInternal>
+          <interfaceRealization Id="db6a47da-dfc7-4582-bb5f-0e3ca25ef51f">
+            <interfaceMoniker Id="05362e0c-3032-4d0a-83b8-17338750554a" LastKnownName="Wielder" />
+            <elementDefinition Id="4eb53b5a-4529-4ae0-991b-e99a60063032" />
+          </interfaceRealization>
+          <interfaceRealization Id="0b737822-9b5a-4410-8f57-79d846448a50">
+            <interfaceMoniker Id="f7f48531-b86d-4cda-92fc-036f757c9b97" LastKnownName="Character" />
+            <elementDefinition Id="af741e36-f995-4703-8a69-64da863d6a05" />
+          </interfaceRealization>
+          <interfaceRealization Id="cbcccaaa-60fa-4382-8778-438041bb0925">
+            <interfaceMoniker Id="9e769975-63f2-4666-973c-28eaca79ad6f" LastKnownName="Attacker" />
+            <elementDefinition Id="11b703ef-d0d1-4629-af68-524cc2b669f8" />
+          </interfaceRealization>
+          <interfaceRealization Id="5675e818-820b-468b-a144-3e93463c89dc">
+            <interfaceMoniker Id="6590b340-275d-4032-bb19-d0368763e29f" LastKnownName="Defender" />
+            <elementDefinition Id="b1d1e9c3-ce13-4990-841f-6f74df24034e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="bae064c2-f8c7-4a8e-b60d-6527abe6803e" isSubstitutable="false">
+            <classMoniker Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" LastKnownName="CardType" />
+            <elementDefinition Id="60700e6f-3062-4ab1-887e-bce7621d8c23" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="87e2eb92-0425-43c3-ba9a-ea0ba30acb2a" name="Class" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="28284d3c-345e-4d03-9332-62dbba7f6c10" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="118daaa4-d187-47ef-9cb9-8cf3e57da963" LastKnownName="Trait" />
+            </type_NamedElement>
+          </property>
+          <property Id="54997fbe-a6fb-4cf7-b7f1-97037e2f68cd" name="Faction" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0a5f5636-89a8-47a1-aeb3-c69d572cf33a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="041d1bf2-ace6-445a-a3a1-1beb1903fab5" LastKnownName="Trait" />
+            </type_NamedElement>
+          </property>
+          <property Id="cb764141-44d4-4ef0-9308-dcd7a86cf33f" name="Proffesions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="4dd87825-8c5c-4ae7-84ba-74a22708837f" name="Lower" value="2">
+                <elementDefinition Id="0920c46f-4777-4055-8099-bbaa3c705e38" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="0547d3ef-c009-4375-a411-eebacd546d7a" name="Upper" value="2">
+                <elementDefinition Id="5099a9e0-6c7e-422c-8d6d-8348eda57d55" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="0dbfd776-f03f-488a-9dbc-8b28cdd3a107" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2733c884-c915-48cf-b16c-d55427cf4a9a" LastKnownName="Trait" />
+            </type_NamedElement>
+          </property>
+          <property Id="b6e695f3-a766-4d51-9de4-5b354d2c7f55" name="Race" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a3368ad5-08c4-479e-93c2-dcecdc9a8fd9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f82adc78-12ab-4c54-a3c9-9c11ed4bf619" LastKnownName="Trait" />
+            </type_NamedElement>
+          </property>
+          <property Id="0ff7c8f0-19cc-4489-9c55-62d09f527c2b" name="Talent spec" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8cab1ed-5fd1-4f4d-b2be-b18fa5c10711" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cb00d12b-3523-4d8f-9f2c-712772745d7e" LastKnownName="Trait" />
+            </type_NamedElement>
+          </property>
+          <property Id="7c2669b7-1d18-4a2d-a807-87857691eb32" name="Treachery" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4ec188e5-21fb-46ca-a667-893605b66789" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5d9e213a-fc7d-452c-9729-14a8c0eee6a1" LastKnownName="Trait" />
+            </type_NamedElement>
+          </property>
+          <property Id="037b16c4-cbac-4a66-8942-3375777909e7" name="Flipped" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f9cdc5b7-ae66-4a5a-b19a-2d8769053ae5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8d614d8b-5348-4bea-aa61-e2e0b69f2357" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="5cfe039b-093d-44f6-8fc7-1ebe4794df91" name="ATK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="68513de3-ed5d-4ea4-9d82-ff1efbdc4a92" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6608e2e5-b72e-42c5-b36b-88c48da983b7" LastKnownName="ATK" />
+            </type_NamedElement>
+          </property>
+          <property Id="fa8e3890-eb9d-4190-b840-a0154b86fedc" name="Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f86b385c-4f0c-4698-bb02-049004af177a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0ad4a7c2-3b72-4c3d-a322-0502e62da004" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="62ff4688-6c13-46b7-89de-f97fc7f5d474" name="Flip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <description>Flip hero</description>
+            <elementDefinition Id="cd869d09-76a0-4215-8901-2dbb16255890" />
+            <preconditionsInternal>
+              <constraint Id="f23ba487-c6a1-405c-8131-3b13f184bf66">
+                <elementDefinition Id="3195561b-0828-43bf-9334-f5f9eef57005" />
+                <specification>
+                  <literalString Id="42c4cbeb-3245-4ca7-b04d-1bd1107b7d79" value="Flipped == false">
+                    <elementDefinition Id="103a79c0-bc6f-4a94-8a7e-c16a892269f8" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </preconditionsInternal>
+            <postconditionsInternal>
+              <constraint Id="c2a8300f-57b2-4faa-88aa-dac3b3ed7405">
+                <elementDefinition Id="7f2801eb-06fb-4d07-bdf4-963d63676467" />
+                <specification>
+                  <literalString Id="72481bea-8912-49ba-8d7a-e98ee5b9305d" value="Flipped == yes">
+                    <elementDefinition Id="082c10ab-9906-4394-98c1-6e54dfa42ba8" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </postconditionsInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="14c002e9-e794-4850-9412-32af46f17617" name="Location" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5c660145-17a4-45f1-8a74-5036e5c87061" />
+        <generalsInternal>
+          <generalization Id="97cc79eb-ea3c-499f-9bb1-d4cdea7107c7" isSubstitutable="false">
+            <classMoniker Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" LastKnownName="CardType" />
+            <elementDefinition Id="b0362f31-f308-421a-b8b9-147628b9ba3b" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="7b94e42d-cff2-4237-ab29-f5d3b42695df" name="Capacity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a20e784d-562a-47e2-bddf-2b38c8d8b2e2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f0a1c34a-618a-4776-8cd4-a7d125efa783" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="491adeb8-9fb2-4b2f-b822-de90ca9df6df" name="Quest" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12c48a68-c284-4c6c-a3be-be18300fd1f0" />
+        <generalsInternal>
+          <generalization Id="cc1900a0-7f1a-414e-9bb9-9cd56ad346ec" isSubstitutable="false">
+            <classMoniker Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" LastKnownName="CardType" />
+            <elementDefinition Id="2022e190-54ea-4b8c-af8d-b8a6af13cfc2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c21324b1-73ef-4c6c-8948-ca921d158c15" name="Equipment" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8c3aa2f1-948a-47d4-9dd0-b05cfb32121e" />
+        <generalsInternal>
+          <generalization Id="a4a593e3-73b0-4a92-a332-87d3d7ba41c3" isSubstitutable="false">
+            <classMoniker Id="d256e4d2-b4be-4c25-b7d3-f36f152b2c2a" LastKnownName="CardType" />
+            <elementDefinition Id="a856139a-bc56-4be6-8dd6-76bf6283265f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="43bbad8c-dab9-4a99-a2e8-9525da5addfd" name="Weapon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2ce62787-b8fd-4449-bca1-7922faa7779a" />
+        <generalsInternal>
+          <generalization Id="f49454b5-0b4b-4f0a-a8c0-dfcc4c681741" isSubstitutable="false">
+            <classMoniker Id="c21324b1-73ef-4c6c-8948-ca921d158c15" LastKnownName="Equipment" />
+            <elementDefinition Id="e478ca34-0deb-4746-9a70-0092e2e11d01" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="05828d93-a07f-4f55-b86b-335845150a24" isDerived="false" sourceEndRoleName="Weapon" targetEndRoleName="Wielder" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="05362e0c-3032-4d0a-83b8-17338750554a" LastKnownName="Wielder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6bdc229c-008f-42bf-b915-7885c723e0e1" name="Weapon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="38e772e7-3d9b-4617-b2a0-e72c2b2d9b23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2036cb3-6b56-40f0-94a8-fa6f179151e5" name="Wielder" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c8e5c86b-a15e-48de-80f5-ce7d67e3e5f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="973ef6ae-dc03-4cb2-b605-32c57288dd4f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="136612d5-f5d4-4fbe-9f93-27be1f5d672c" name="ATK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0e8523d-a658-4350-a97e-fa6f86881a6b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ce81fed4-49fc-4355-835f-91d0f5188cfd" LastKnownName="ATK" />
+            </type_NamedElement>
+          </property>
+          <property Id="a2baf5a0-193d-4173-bb3d-f2404ca6e8ea" name="Strike cost" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61eb398e-8d7d-4aa4-be96-9afe14ef703d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a1d2eff0-ffef-4106-969d-962d418b255e" LastKnownName="Cost" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="53824a17-88f3-4463-89cc-9cec44f48ad9" name="Strike" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="243cd576-daf6-4edf-8cf8-9ae5ee5d7cd1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5b188908-b44f-4b46-81fc-8ff747e84678" name="Wilder" direction="In" isUnique="false">
+                  <elementDefinition Id="db5022bb-1ad3-4c3c-b39e-8778b0405af6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+            <preconditionsInternal>
+              <constraint Id="f7b04e8e-1771-4679-b383-39c047a17983">
+                <elementDefinition Id="a7e07b6b-050c-4c45-b59c-2ad7e36db8e4" />
+                <specification>
+                  <literalString Id="07a84a22-9c67-4fd3-82e9-4db1d5052571" value="Wielder is empty">
+                    <elementDefinition Id="ee396099-643e-4e90-ac60-36af31883020" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </preconditionsInternal>
+            <postconditionsInternal>
+              <constraint Id="bec8a2a3-38a1-4f62-bde6-93b7fa488410">
+                <elementDefinition Id="293e2b15-83b6-4f7b-a624-926dff1092b8" />
+                <specification>
+                  <literalString Id="56a678b7-75e4-43d3-b041-77d6e74465f9" value="Wielder are setted">
+                    <elementDefinition Id="30506c54-8971-4d0c-9ada-913121d63b25" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </postconditionsInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1b7186ca-b1c0-48ea-9fb6-f5387a95e774" name="Armor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d45e946b-753a-4141-8f52-6162fc675baa" />
+        <generalsInternal>
+          <generalization Id="65ad2968-e99a-4972-91cd-4813f83af81d" isSubstitutable="false">
+            <classMoniker Id="c21324b1-73ef-4c6c-8948-ca921d158c15" LastKnownName="Equipment" />
+            <elementDefinition Id="ece95ced-79e3-4e11-b872-74f50c79ddbc" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="db1f497b-d614-4b0e-b190-20e71b1c40c8" name="DEF" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5de13a6d-6b7b-4b1b-b0cc-c8a733821105" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f3ef9382-5674-4441-963d-be20c053e282" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="12be5cda-2d61-4824-b9d5-0929522b19fc" name="Item" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f66549c2-6e4f-47de-bb79-9ec4b8fddc67" />
+        <generalsInternal>
+          <generalization Id="b3c07651-d3ae-4e8d-9c46-5931bc3e4770" isSubstitutable="false">
+            <classMoniker Id="c21324b1-73ef-4c6c-8948-ca921d158c15" LastKnownName="Equipment" />
+            <elementDefinition Id="ed0d0fd5-d759-4217-b1f2-568abdf23b05" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="a7c6a300-437f-40a3-8e3d-8dfcef866f56" name="DEF" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6ed63677-e410-480c-9e23-1b907794d1dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f0a1c34a-618a-4776-8cd4-a7d125efa783" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="118daaa4-d187-47ef-9cb9-8cf3e57da963" name="Trait" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Type identify::Trait">
+        <elementDefinition Id="1003f743-4d93-40b5-aef3-38a10cd57899" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="041d1bf2-ace6-445a-a3a1-1beb1903fab5" name="Trait" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Type identify::Trait">
+        <elementDefinition Id="1003f743-4d93-40b5-aef3-38a10cd57899" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2733c884-c915-48cf-b16c-d55427cf4a9a" name="Trait" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Type identify::Trait">
+        <elementDefinition Id="1003f743-4d93-40b5-aef3-38a10cd57899" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f82adc78-12ab-4c54-a3c9-9c11ed4bf619" name="Trait" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Type identify::Trait">
+        <elementDefinition Id="1003f743-4d93-40b5-aef3-38a10cd57899" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cb00d12b-3523-4d8f-9f2c-712772745d7e" name="Trait" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Type identify::Trait">
+        <elementDefinition Id="1003f743-4d93-40b5-aef3-38a10cd57899" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5d9e213a-fc7d-452c-9729-14a8c0eee6a1" name="Trait" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Type identify::Trait">
+        <elementDefinition Id="1003f743-4d93-40b5-aef3-38a10cd57899" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8d614d8b-5348-4bea-aa61-e2e0b69f2357" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ce81fed4-49fc-4355-835f-91d0f5188cfd" name="ATK" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::ATK">
+        <elementDefinition Id="53d401b6-37c3-4e76-a9ea-1b94f0918a50" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a1d2eff0-ffef-4106-969d-962d418b255e" name="Cost" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Cost">
+        <elementDefinition Id="a1923a87-ac66-49a0-83e5-20114dcefb20" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="05362e0c-3032-4d0a-83b8-17338750554a" name="Wielder" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df643e7c-ee6d-40bb-8549-f4fb87187e0f" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f0a1c34a-618a-4776-8cd4-a7d125efa783" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f3ef9382-5674-4441-963d-be20c053e282" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7ecf8a8c-777c-44b4-9ef8-c28389b8c69d" name="Totem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="25271d20-735e-485b-8d7c-d0d953f6ca53" />
+        <suppliersInternal>
+          <interfaceRealization Id="e25ddaf0-9cb7-48c8-8309-cf8e06c238ea">
+            <interfaceMoniker Id="f7f48531-b86d-4cda-92fc-036f757c9b97" LastKnownName="Character" />
+            <elementDefinition Id="40c664f5-d142-42be-b566-286094a59bd5" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="1ce089e1-8954-4e8e-bd39-ab62119dcb55" isSubstitutable="false">
+            <classMoniker Id="4a0f2647-8e39-4727-a45c-be4488d483ae" LastKnownName="Ability" />
+            <elementDefinition Id="73ee906c-06c6-4eda-8d31-4bfe17494b6c" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="e9c7b5c2-7204-43b7-99f0-ebb8f0abb01b" name="ATK" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a6fdc483-c7de-4364-9cf0-ddcd27efbd69" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="638f1c0c-1c04-4646-b012-81c244c1a53f" LastKnownName="ATK" />
+            </type_NamedElement>
+          </property>
+          <property Id="3fce37ee-4490-4800-a2b6-3092674f627c" name="Health" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdd6c91f-8cb9-4ae2-9c70-656cc34d6409" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="63b27ef1-bcd2-4fbd-ba34-33b6e6b0dec2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4599052e-e493-448a-89a6-0535ee95014c" name="ATK" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::ATK">
+        <elementDefinition Id="53d401b6-37c3-4e76-a9ea-1b94f0918a50" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8996e86b-e358-4555-8098-5b379e587208" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6608e2e5-b72e-42c5-b36b-88c48da983b7" name="ATK" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::ATK">
+        <elementDefinition Id="53d401b6-37c3-4e76-a9ea-1b94f0918a50" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0ad4a7c2-3b72-4c3d-a322-0502e62da004" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f7f48531-b86d-4cda-92fc-036f757c9b97" name="Character" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22e10beb-3364-42b0-bd41-429c4d3c732e" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9e769975-63f2-4666-973c-28eaca79ad6f" name="Attacker" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59b22162-bc74-49b7-ab97-9ea57a9e4d46" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="6590b340-275d-4032-bb19-d0368763e29f" name="Defender" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="89ac26ea-db61-45d3-87ed-570bb64c2bf6" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="638f1c0c-1c04-4646-b012-81c244c1a53f" name="ATK" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::ATK">
+        <elementDefinition Id="53d401b6-37c3-4e76-a9ea-1b94f0918a50" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="63b27ef1-bcd2-4fbd-ba34-33b6e6b0dec2" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="b7e09aa4-ebed-4c76-8cd4-9553400cd1ed" name="Attachment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0cb1629f-f102-48d3-afad-25ccfe7f3b3d" />
+        <ownedAttributes>
+          <property Id="2162aa7a-c170-4bb1-8013-0c1dfbc3d6ab" name="Host" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="18de8019-fd63-46ac-a7ba-7c8a004fcf4b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c6d7b921-c784-4342-81b6-78d93640b5bf" LastKnownName="Card" />
+            </type_NamedElement>
+          </property>
+          <property Id="cab50a8d-3cc7-4da0-8fdf-259cc26989d4" name="HostDescription" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3742d9d5-a131-4499-881c-27977dc5e815" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="65f38a5f-5b67-4522-8df8-3ad2e5201d25" LastKnownName="CardDescriptor" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="c8d20686-7ede-4d82-89cd-1b2f27b9d460" name="Attach" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a98fa89-31d4-4159-850a-305daa9e4e76" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b52a1e0-b8d1-4d32-a996-5721f7db18c4" name="New host" direction="In">
+                  <elementDefinition Id="1ebd308b-8c23-4216-bdd8-0e6e7e83d081" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6d7b921-c784-4342-81b6-78d93640b5bf" LastKnownName="Card" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+            <preconditionsInternal>
+              <constraint Id="3a2232bd-7338-431c-a4db-46019515e5a6">
+                <elementDefinition Id="e82f6d18-3806-4fc4-a5cc-c4935e46ea48" />
+                <specification>
+                  <literalString Id="a375fdcc-6f87-4c94-9f17-22752ea6984b" value="Host is empty">
+                    <elementDefinition Id="fc730797-2d72-4b51-9662-37a8994031fe" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </preconditionsInternal>
+            <postconditionsInternal>
+              <constraint Id="6b286ed1-21ed-4eb7-b304-dba35701dae5">
+                <elementDefinition Id="98a7762e-307b-4d1c-853f-9dab5dc47c76" />
+                <specification>
+                  <literalString Id="2f23f74d-5678-4603-9493-c701c5d9274a" value="Host is non empty">
+                    <elementDefinition Id="2e253ffa-7cf0-4b25-847b-19908e95d594" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </postconditionsInternal>
+          </operation>
+          <operation Id="df29ae68-871e-48c4-901e-354b4e8d65d8" name="Reattach" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dd53cf1d-0e4b-439e-9884-fab39e8ba044" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="86b0eb23-bc26-4a3e-a9df-38127d1f1500" name="New host" direction="In" isUnique="false">
+                  <elementDefinition Id="682e8e83-d856-4bbe-b6a0-1a2baf0df021" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6d7b921-c784-4342-81b6-78d93640b5bf" LastKnownName="Card" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+            <preconditionsInternal>
+              <constraint Id="2b23a6b4-e9a7-497c-b57a-a264f8b0f8bb">
+                <elementDefinition Id="ebe5334a-8e71-46b1-8153-693fe0f86bb2" />
+                <specification>
+                  <literalString Id="2ef3e885-2a39-45ff-861c-bd7ac88d4f88" value="Host is not empty">
+                    <elementDefinition Id="0ba2a646-ad5a-49f5-b773-8e56ff4090e3" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </preconditionsInternal>
+            <postconditionsInternal>
+              <constraint Id="061d61cb-d4bf-4998-bf0c-27e9bbf9c637">
+                <elementDefinition Id="d13555fe-7141-4de9-a520-3b91af220cf3" />
+                <specification>
+                  <literalString Id="68ea4e64-59bc-44f5-9cba-4d5d3eabacfe" value="New host not equal previous host">
+                    <elementDefinition Id="40b7352b-50fd-4da5-8180-0bf3ef8d1744" />
+                  </literalString>
+                </specification>
+              </constraint>
+            </postconditionsInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c6d7b921-c784-4342-81b6-78d93640b5bf" name="Card" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::Card::Card">
+        <elementDefinition Id="b1eef760-ad1b-4bfb-9f3d-a474557d925f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="65f38a5f-5b67-4522-8df8-3ad2e5201d25" name="CardDescriptor" isAbstract="false" isLeaf="false" cachedFullName="WoW-TCG::CardDescriptor">
+        <elementDefinition Id="e6e432f8-40c3-44a7-9770-dab9d0380a50" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="88f6a43d-bc6f-4f65-92dd-35e93418d69d" name="WoW-TCG">
+    <elementDefinition Id="2c3903db-8a17-4d89-9896-4cd42292b4ca" />
+  </package>
+</logicalClassDesignerModel>
